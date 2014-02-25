@@ -7,3 +7,6 @@
 [submodule "bundle/qfixtoggle"]
 	path = bundle/qfixtoggle
 	url = https://github.com/s6o/QFixToggle.git
+[submodule "bundle/taglist"]
+	path = bundle/taglist
+	url = https://github.com/s6o/taglist.vim.git
