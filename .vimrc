@@ -10,11 +10,11 @@ syntax on
 filetype indent plugin on
 
 if has("gui_running")
-  set background=light
-  colorscheme solarized
-else
   set background=dark
   colorscheme solarized
+else
+  set t_Co=256
+  colorscheme xoria256
 endif
 
 set autowrite
