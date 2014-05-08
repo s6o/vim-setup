@@ -29,7 +29,11 @@ set foldlevel=0
 set foldmethod=marker
 set fileformats=unix,dos,mac
 
-set guifont=Source\ Code\ Pro\ 10
+if has("unix")
+  set guifont=Source\ Code\ Pro\ 10
+else
+  set guifont=Source_Code_Pro:h10
+endif
 
 set guioptions+=c
 set guioptions-=T
