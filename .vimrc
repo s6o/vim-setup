@@ -18,6 +18,7 @@ else
 endif
 
 set autowrite
+set backspace=indent,eol,start
 set completeopt=menu,longest,preview
 set colorcolumn=80
 set cursorline
