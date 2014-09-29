@@ -108,7 +108,7 @@ let tlist_php_settings = 'php;c:class;d:constant;f:function'
 au BufRead,BufNewFile *.php set makeprg=/usr/local/php5/bin/php\ -l\ %
 au BufRead,BufNewFile *.php set errorformat=%m\ in\ %f\ on\ line\ %l
 au BufRead,BufNewFile *.php set foldmarker={,} foldmethod=marker
-au BufNewFile,BufRead *.psql set filetype=pgsql
+au BufNewFile,BufRead *.sql set filetype=pgsql
 
 "******************************************************************************
 " xml specific
