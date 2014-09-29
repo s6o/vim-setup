@@ -91,18 +91,7 @@ au BufRead,BufNewFile *.hpp set foldmarker={,} foldmethod=marker
 "******************************************************************************
 " Use tabs for these types of files 
 "******************************************************************************
-au BufRead,BufNewFile *.css set noexpandtab shiftwidth=4 tabstop=4 nosmartindent smarttab
-au BufRead,BufNewFile *.html set noexpandtab shiftwidth=4 tabstop=4 nosmartindent smarttab
-au BufRead,BufNewFile *.phtml set noexpandtab shiftwidth=4 tabstop=4 nosmartindent smarttab
-"au BufRead,BufNewFile *.js set noexpandtab shiftwidth=4 tabstop=4 nosmartindent smarttab
-au BufRead,BufNewFile *.php set noexpandtab shiftwidth=4 tabstop=4 nosmartindent smarttab
-au BufRead,BufNewFile *.psql set noexpandtab shiftwidth=4 tabstop=4 nosmartindent smarttab
-au BufRead,BufNewFile *.md set noexpandtab shiftwidth=4 tabstop=4 nosmartindent smarttab
-"au BufRead,BufNewFile *.py set noexpandtab shiftwidth=4 tabstop=4 nosmartindent smarttab
-au BufRead,BufNewFile *.sqlite set noexpandtab shiftwidth=4 tabstop=4 nosmartindent smarttab
-au BufRead,BufNewFile *.txt set noexpandtab shiftwidth=4 tabstop=4 nosmartindent smarttab
-au BufRead,BufNewFile *.vim set noexpandtab shiftwidth=4 tabstop=4 nosmartindent smarttab
-au BufRead,BufNewFile *.qhp set noexpandtab shiftwidth=4 tabstop=4 nosmartindent smarttab
+"au BufRead,BufNewFile *.css set noexpandtab shiftwidth=4 tabstop=4 nosmartindent smarttab
 
 "******************************************************************************
 " Code complete
