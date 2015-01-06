@@ -92,6 +92,7 @@ au BufRead,BufNewFile *.hpp set foldmarker={,} foldmethod=marker
 " Use tabs for these types of files 
 "******************************************************************************
 "au BufRead,BufNewFile *.css set noexpandtab shiftwidth=4 tabstop=4 nosmartindent smarttab
+au BufRead,BufNewFile *.java set expandtab shiftwidth=4 tabstop=4 smarttab
 
 "******************************************************************************
 " Code complete
