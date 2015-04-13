@@ -1,48 +1,64 @@
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
+  ignore = dirty
 [submodule "bundle/bufexplorer"]
 	path = bundle/bufexplorer
 	url = https://github.com/vim-scripts/bufexplorer.zip.git
+  ignore = dirty
 [submodule "bundle/qfixtoggle"]
 	path = bundle/qfixtoggle
 	url = https://github.com/s6o/QFixToggle.git
+  ignore = dirty
 [submodule "bundle/taglist"]
 	path = bundle/taglist
 	url = https://github.com/s6o/taglist.vim.git
+  ignore = dirty
 [submodule "bundle/jellybeans"]
 	path = bundle/jellybeans
 	url = https://github.com/nanotech/jellybeans.vim.git
+  ignore = dirty
 [submodule "bundle/vim-irblack"]
 	path = bundle/vim-irblack
 	url = https://github.com/wesgibbs/vim-irblack.git
+  ignore = dirty
 [submodule "bundle/xoria256"]
 	path = bundle/xoria256
 	url = https://github.com/vim-scripts/xoria256.vim.git
+  ignore = dirty
 [submodule "bundle/plantuml-syntax"]
 	path = bundle/plantuml-syntax
 	url = https://github.com/aklt/plantuml-syntax.git
+  ignore = dirty
 [submodule "bundle/pgsql"]
 	path = bundle/pgsql
 	url = https://github.com/exu/pgsql.vim.git
+  ignore = dirty
 [submodule "bundle/vim-powerline"]
 	path = bundle/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline.git
+  ignore = dirty
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+  ignore = dirty
 [submodule "bundle/vim-dirdiff"]
 	path = bundle/vim-dirdiff
 	url = git://github.com/will133/vim-dirdiff
+  ignore = dirty
 [submodule "bundle/vim-javascript"]
 	path = bundle/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
+  ignore = dirty
 [submodule "vim-jsx"]
 	path = vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
+  ignore = dirty
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
+  ignore = dirty
 [submodule "bundle/tern-for-vim"]
 	path = bundle/tern-for-vim
 	url = https://github.com/marijnh/tern_for_vim.git
+  ignore = dirty
