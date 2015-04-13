@@ -145,7 +145,7 @@ map <silent> \q :QFix<CR>
 let g:jsx_ext_required = 0
 
 "~~~~ tagbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-nmap <F8> :TagbarToggle<CR>
+noremap <silent> \g :TagbarToggle<CR> 
 
 "******************************************************************************
 " General keymap customizationgs
