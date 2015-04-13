@@ -134,7 +134,7 @@ let Tlist_File_Fold_Auto_Close = 0
 let Tlist_Show_One_File = 1
 let Tlist_Process_File_Always = 1
 let Tlist_Use_Right_Window = 1
-let Tlist_WinWidth = 40
+let Tlist_WinWidth = 50
 let Tlist_Show_Menu = 1
 
 "~~~~ qfixtoggle.vim ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
@@ -146,6 +146,7 @@ let g:jsx_ext_required = 0
 
 "~~~~ tagbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 noremap <silent> \g :TagbarToggle<CR> 
+let g:tagbar_width = 50
 
 "******************************************************************************
 " General keymap customizationgs
