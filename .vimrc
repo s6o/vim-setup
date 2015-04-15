@@ -2,9 +2,10 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
-"******************************************************************************
+
+"
 " Global options
-"******************************************************************************
+"
 execute pathogen#infect()
 syntax on
 filetype indent plugin on
@@ -79,56 +80,74 @@ set tabstop=2
 set title titlestring=%{getcwd()}\ \|\ %<%f\ %([%{Tlist_Get_Tagname_By_Line()}]%)
 
 set vb
-
 set wildmenu
 
-"******************************************************************************
-" CPP specific
-"******************************************************************************
-au BufRead,BufNewFile *.cpp set foldmarker={,} foldmethod=marker
-au BufRead,BufNewFile *.hpp set foldmarker={,} foldmethod=marker
 
-"******************************************************************************
-" Use tabs for these types of files 
-"******************************************************************************
-"au BufRead,BufNewFile *.css set noexpandtab shiftwidth=4 tabstop=4 nosmartindent smarttab
-au BufRead,BufNewFile *.java set expandtab shiftwidth=4 tabstop=4 smarttab
+"
+" General keymap customizationgs
+"
+" Backspace in normal mode behaves like in insert mode 
+nnoremap <BS> i<BS><ESC>
 
-"******************************************************************************
+" Easier window resizing with Alt + [h,j,k,l]
+map <silent> <A-h> <C-w><
+map <silent> <A-j> <C-w>-
+map <silent> <A-k> <C-w>+
+map <silent> <A-l> <C-w>>
+
+" Easier navigation between windows with , + [h,j,k,l]
+nmap <silent> ,h <C-w>h
+nmap <silent> ,j <C-w>j
+nmap <silent> ,k <C-w>k
+nmap <silent> ,l <C-w>l
+
+" Buffer navigation 
+nmap <silent> + :bnext<CR>
+nmap <silent> - :bprevious<CR>
+
+" Quickfix list navigation 
+nmap <silent> <A-S-l> :cnext<CR>
+nmap <silent> <A-S-h> :cprev<CR>
+
+
+"
 " Code complete
-"******************************************************************************
-"autocmd FileType python set noexpandtab shiftwidth=4 tabstop=4 nosmartindent smarttab
+"
 autocmd FileType javascript set omnifunc=javascriptcomplete#Complete
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
-"******************************************************************************
-" PHP syntax check, tags settings, folding
-"******************************************************************************
+
+"
+" Language specific customizations
+"
+" C++
+au BufRead,BufNewFile *.cpp set foldmarker={,} foldmethod=marker
+au BufRead,BufNewFile *.hpp set foldmarker={,} foldmethod=marker
+
+" PHP - syntax check, tags settings, folding
 let tlist_php_settings = 'php;c:class;d:constant;f:function'
 au BufRead,BufNewFile *.php set makeprg=/usr/local/php5/bin/php\ -l\ %
 au BufRead,BufNewFile *.php set errorformat=%m\ in\ %f\ on\ line\ %l
 au BufRead,BufNewFile *.php set foldmarker={,} foldmethod=marker
 au BufNewFile,BufRead *.sql set filetype=pgsql
 
-"******************************************************************************
-" xml specific
-"******************************************************************************
+" XML 
 let g:xml_syntax_folding = 1
 au FileType xml setlocal foldmethod=syntax
 
-"******************************************************************************
-" Plugin customizations
-"******************************************************************************
 
-"~~~~ bufexplorer.vim ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+"
+" Plugin customizations
+"
+" bufexplorer.vim 
 let g:bufExplorerShowRelativePath=1  " Show absolute paths.
 let g:bufExplorerSortBy='fullpath'  " Sort by the buffer's name.
 let g:bufExplorerSplitBelow=1        " Split new window below current.
 let g:bufExplorerSplitRight=1        " Split right.
 let g:bufExplorerSplitOutPathName=0  " Don't split the path and file
 
-"~~~~ taglist.vim ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+" taglist.vim 
 map <silent> \t :TlistToggle<CR>
 let Tlist_File_Fold_Auto_Close = 0
 let Tlist_Show_One_File = 1
@@ -137,42 +156,15 @@ let Tlist_Use_Right_Window = 1
 let Tlist_WinWidth = 50
 let Tlist_Show_Menu = 1
 
-"~~~~ qfixtoggle.vim ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+" qfixtoggle.vim 
 let g:QFixToggle_Height = 10
 map <silent> \q :QFix<CR>
 
-"~~~~ vim-jsx.vim ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+" vim-jsx.vim
 let g:jsx_ext_required = 0
 
-"~~~~ tagbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+" tagbar 
 noremap <silent> \g :TagbarToggle<CR> 
 let g:tagbar_width = 50
 
-"******************************************************************************
-" General keymap customizationgs
-"******************************************************************************
-
-"~~~~ Backspace in normal mode behaves like in insert mode ~~~~~~~~~~~~~~~~~~~~ 
-nnoremap <BS> i<BS><ESC>
-
-"~~~~ Easier window resizing with Alt + [h,j,k,l] ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-map <silent> <A-h> <C-w><
-map <silent> <A-j> <C-w>-
-map <silent> <A-k> <C-w>+
-map <silent> <A-l> <C-w>>
-
-"~~~~ Easier navigation between windows with , + [h,j,k,l] ~~~~~~~~~~~~~~~~~~~~ 
-nmap <silent> ,h <C-w>h
-nmap <silent> ,j <C-w>j
-nmap <silent> ,k <C-w>k
-nmap <silent> ,l <C-w>l
-
-"~~~~ Buffer navigation ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-nmap <silent> + :bnext<CR>
-nmap <silent> - :bprevious<CR>
-
-"~~~~ Quickfix list navigation ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-nmap <silent> <A-S-l> :cnext<CR>
-nmap <silent> <A-S-h> :cprev<CR>
-
-"** end ***********************************************************************
+" END
