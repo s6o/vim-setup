@@ -119,11 +119,14 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
 
 "
-" Language specific customizations
+" Language/tool specific customizations
 "
 " C++
 au BufRead,BufNewFile *.cpp set foldmarker={,} foldmethod=marker
 au BufRead,BufNewFile *.hpp set foldmarker={,} foldmethod=marker
+
+" git
+au BufNewFile,BufRead COMMIT_EDITMSG setlocal spell
 
 " PHP - syntax check, tags settings, folding
 let tlist_php_settings = 'php;c:class;d:constant;f:function'
