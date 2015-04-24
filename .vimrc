@@ -32,7 +32,12 @@ set foldmethod=marker
 set fileformats=unix,dos,mac
 
 if has("unix")
-  set guifont=Source\ Code\ Pro\ 11
+  let s:oscode = system("uname -s")
+  if s:oscode == "Darwin\n"
+    set guifont=Source_Code_Pro:h14
+  else
+    set guifont=Source\ Code\ Pro\ 11
+  endif
 else
   set guifont=Source_Code_Pro:h11
 endif
