@@ -62,3 +62,6 @@
 	path = bundle/tern-for-vim
 	url = https://github.com/marijnh/tern_for_vim.git
   ignore = dirty
+[submodule "bundle/vim-scala"]
+	path = bundle/vim-scala
+	url = https://github.com/derekwyatt/vim-scala.git
