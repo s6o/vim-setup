@@ -50,10 +50,6 @@
 	path = bundle/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
   ignore = dirty
-[submodule "vim-jsx"]
-	path = vim-jsx
-	url = https://github.com/mxw/vim-jsx.git
-  ignore = dirty
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
