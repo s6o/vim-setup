@@ -34,7 +34,8 @@ set fileformats=unix,dos,mac
 if has("unix")
   let s:oscode = system("uname -s")
   if s:oscode == "Darwin\n"
-    set guifont=Source_Code_Pro:h14
+    set guifont=Monaco:h14
+    set clipboard=unnamed
   else
     set guifont=Source\ Code\ Pro\ 11
   endif
