@@ -64,3 +64,6 @@
 [submodule "bundle/vim-jsx"]
 	path = bundle/vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
+[submodule "bundle/elm"]
+	path = bundle/elm
+	url = https://github.com/lambdatoast/elm.vim.git
