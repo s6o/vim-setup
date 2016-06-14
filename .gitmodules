@@ -67,3 +67,6 @@
 [submodule "bundle/elm"]
 	path = bundle/elm
 	url = https://github.com/lambdatoast/elm.vim.git
+[submodule "bundle/rainbow_parentheses"]
+	path = bundle/rainbow_parentheses
+	url = https://github.com/kien/rainbow_parentheses.vim.git
