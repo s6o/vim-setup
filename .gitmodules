@@ -73,3 +73,6 @@
 [submodule "bundle/fireplace"]
 	path = bundle/fireplace
 	url = git://github.com/tpope/vim-fireplace.git
+[submodule "bundle/tracwiki"]
+	path = bundle/tracwiki
+	url = https://github.com/vim-scripts/tracwiki.git
