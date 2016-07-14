@@ -66,3 +66,6 @@
 [submodule "bundle/tracwiki"]
 	path = bundle/tracwiki
 	url = https://github.com/vim-scripts/tracwiki.git
+[submodule "bundle/elm-vim"]
+	path = bundle/elm-vim
+	url = https://github.com/ElmCast/elm-vim.git

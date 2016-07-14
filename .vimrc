@@ -159,6 +159,21 @@ let g:bufExplorerSplitBelow=1        " Split new window below current.
 let g:bufExplorerSplitRight=1        " Split right.
 let g:bufExplorerSplitOutPathName=0  " Don't split the path and file
 
+" elm-vim, syntastic
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:elm_syntastic_show_warnings = 1
+
+let g:elm_jump_to_error = 0
+let g:elm_make_output_file = "elm.js"
+let g:elm_make_show_warnings = 0
+let g:elm_syntastic_show_warnings = 0
+let g:elm_browser_command = ""
+let g:elm_detailed_complete = 0
+let g:elm_format_autosave = 0
+let g:elm_setup_keybindings = 1
+let g:elm_classic_hightlighting = 0
+
 " taglist.vim 
 map <silent> \t :TlistToggle<CR>
 let Tlist_File_Fold_Auto_Close = 0
