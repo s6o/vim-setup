@@ -12,7 +12,8 @@ filetype indent plugin on
 
 if has("gui_running")
   set background=dark
-  colorscheme solarized
+  "colorscheme solarized
+  colorscheme zellner
 else
   set t_Co=256
   colorscheme xoria256
