@@ -172,9 +172,6 @@ let Tlist_Show_Menu = 1
 let g:QFixToggle_Height = 10
 map <silent> \q :QFix<CR>
 
-" vim-jsx.vim
-let g:jsx_ext_required = 0
-
 " tagbar 
 noremap <silent> \g :TagbarToggle<CR> 
 let g:tagbar_width = 50
