@@ -218,4 +218,11 @@ au Syntax *.clj RainbowParenthesesLoadRound
 au Syntax *.clj RainbowParenthesesLoadSquare
 au Syntax *.clj RainbowParenthesesLoadBraces
 
+" YouCompleteMe
+let g:ycm_semantic_triggers = {
+     \ 'elm' : ['.'],
+     \}
+
+let g:ycm_python_binary_path = 'python'
+
 " END
