@@ -148,6 +148,10 @@ au BufNewFile,BufRead *.sql set filetype=pgsql
 let g:xml_syntax_folding = 1
 au FileType xml setlocal foldmethod=syntax
 
+" spell checking for viki editing
+au BufNewFile,BufRead vimperator-*.tmp setlocal spell
+au BufNewFile,BufRead vimperator-*.tmp setfiletype tracwiki
+
 
 "
 " Plugin customizations
