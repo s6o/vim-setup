@@ -11,9 +11,9 @@ syntax on
 filetype indent plugin on
 
 if has("gui_running")
-  set background=dark
+  set background=light
   "colorscheme solarized
-  colorscheme zellner
+  colorscheme jellybeans
 else
   set t_Co=256
   colorscheme xoria256
@@ -175,7 +175,7 @@ let g:elm_syntastic_show_warnings = 0
 let g:elm_browser_command = ""
 let g:elm_detailed_complete = 0
 let g:elm_format_autosave = 0
-let g:elm_setup_keybindings = 1
+let g:elm_setup_keybindings = 0
 let g:elm_classic_hightlighting = 0
 
 " taglist.vim 
