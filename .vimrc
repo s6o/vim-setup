@@ -167,6 +167,11 @@ let g:bufExplorerSplitBelow=1        " Split new window below current.
 let g:bufExplorerSplitRight=1        " Split right.
 let g:bufExplorerSplitOutPathName=0  " Don't split the path and file
 
+" dbext
+let g:dbext_default_profile_psql = 'type=PGSQL:host=localhost:port=5432:dbname=development:user=postgres'
+let g:dbext_default_profile = 'psql'"
+au BufNewFile,BufRead *.sql DBCompleteTables
+
 " elm-vim, syntastic
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
