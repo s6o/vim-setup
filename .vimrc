@@ -145,7 +145,8 @@ au BufRead,BufNewFile *.php set errorformat=%m\ in\ %f\ on\ line\ %l
 au BufRead,BufNewFile *.php set foldmarker={,} foldmethod=marker
 
 " PostgreSQL, PL/PgSQL
-au BufNewFile,BufRead *.sql set filetype=pgsql
+"au BufNewFile,BufRead *.sql set filetype=pgsql
+let g:sql_type_default = 'pgsql'
 
 " XML 
 let g:xml_syntax_folding = 1
