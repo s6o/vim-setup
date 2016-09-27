@@ -42,6 +42,9 @@ if has("unix")
   endif
 else
   set guifont=Source_Code_Pro:h11
+  " Vim 8 - windows
+  "set rop=type:directx,geom:1,taamode:1
+  "set enc=utf-8
 endif
 
 set guioptions+=c
@@ -223,8 +226,11 @@ au Syntax *.clj RainbowParenthesesLoadSquare
 au Syntax *.clj RainbowParenthesesLoadBraces
 
 " YouCompleteMe
+nnoremap <Leader>] :YouCompleteMe GoTo<CR>
+let g:ycm_rust_src_path = '/Users/ols/Projects/rust/src'
 let g:ycm_semantic_triggers = {
      \ 'elm' : ['.'],
+     \ 'rust' : ['.', '::']
      \}
 
 let g:ycm_python_binary_path = 'python'
