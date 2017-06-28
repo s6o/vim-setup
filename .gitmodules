@@ -61,7 +61,7 @@
 	url = git://github.com/tpope/vim-fireplace.git
 [submodule "bundle/tracwiki"]
 	path = bundle/tracwiki
-	url = https://github.com/vim-scripts/tracwiki.git
+	url = https://github.com/s6o/tracwiki.git
 [submodule "bundle/elm-vim"]
 	path = bundle/elm-vim
 	url = https://github.com/ElmCast/elm-vim.git
@@ -80,3 +80,6 @@
 [submodule "bundle/dbext"]
 	path = bundle/dbext
 	url = https://github.com/vim-scripts/dbext.vim.git
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = git@github.com:vim-airline/vim-airline.git

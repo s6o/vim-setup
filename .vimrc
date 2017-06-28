@@ -17,6 +17,7 @@ if has("gui_running")
 else
   set t_Co=256
   colorscheme xoria256
+  set termencoding=utf-8
 endif
 
 set autowrite
@@ -26,19 +27,23 @@ set colorcolumn=80
 set cursorline
 set cursorcolumn
 set expandtab
+set encoding=utf-8
 set foldcolumn=2
 set foldenable
 set foldlevel=0
 set foldmethod=marker
+set fillchars+=stl:\ ,stlnc:\
 set fileformats=unix,dos,mac
 
 if has("unix")
   let s:oscode = system("uname -s")
   if s:oscode == "Darwin\n"
-    set guifont=Monaco:h14
+"    set guifont=Inconsolata:h18
+"    set guifont=Source\ Code\ Pro:h16
+    set guifont=Source\ Code\ Pro\ for\ Powerline:h18
     set clipboard=unnamed
   else
-    set guifont=Source\ Code\ Pro\ 11
+    set guifont=Source\ Code\ Pro\ 12
   endif
 else
   set guifont=Source_Code_Pro:h11
@@ -55,6 +60,7 @@ set history=1000
 set ignorecase
 set laststatus=2
 set linespace=0
+set list listchars=tab:→\ ,trail:·
 set matchpairs+=<:>
 set nobackup
 set nomousehide
@@ -72,17 +78,17 @@ set showcmd
 set splitbelow
 set splitright
 
-set statusline=
-set statusline+=%-3.3n\                                   " buffer number
-set statusline+=%F\                                       " filename
-set statusline+=%h%m%r%w                                  " status flags
-set statusline+=\[%{strlen(&ft)?&ft:'none'}]              " file type
-set statusline+=\ \|\ %(%{Tlist_Get_Tagname_By_Line()}%)  " taglist, active tag
-set statusline+=%=                                        " right align remainder
-set statusline+=0x%-3B                                    " character value hex
-set statusline+=\|\ %-5b                                  " character value dec
-set statusline+=%-10(%l,%c%V%)                            " line, character
-set statusline+=%<%P                                      " file position
+"set statusline=
+"set statusline+=%-3.3n\                                   " buffer number
+"set statusline+=%F\                                       " filename
+"set statusline+=%h%m%r%w                                  " status flags
+"set statusline+=\[%{strlen(&ft)?&ft:'none'}]              " file type
+"set statusline+=\ \|\ %(%{Tlist_Get_Tagname_By_Line()}%)  " taglist, active tag
+"set statusline+=%=                                        " right align remainder
+"set statusline+=0x%-3B                                    " character value hex
+"set statusline+=\|\ %-5b                                  " character value dec
+"set statusline+=%-10(%l,%c%V%)                            " line, character
+"set statusline+=%<%P                                      " file position
 
 set synmaxcol=500
 
