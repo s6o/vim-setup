@@ -60,7 +60,8 @@ set history=1000
 set ignorecase
 set laststatus=2
 set linespace=0
-set list listchars=tab:→\ ,trail:·
+"set list listchars=tab:→\ ,trail:·
+set listchars=tab:▶\ ,trail:·,extends:\#,nbsp:.
 set matchpairs+=<:>
 set nobackup
 set nomousehide
@@ -246,5 +247,8 @@ let g:ycm_semantic_triggers = {
      \}
 
 let g:ycm_python_binary_path = 'python'
+
+"Powerline
+let g:Powerline_symbols = 'fancy'
 
 " END
