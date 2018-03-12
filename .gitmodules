@@ -65,9 +65,6 @@
 [submodule "bundle/elm-vim"]
 	path = bundle/elm-vim
 	url = https://github.com/ElmCast/elm-vim.git
-[submodule "bundle/you-complete-me"]
-	path = bundle/you-complete-me
-	url = https://github.com/Valloric/YouCompleteMe.git
 [submodule "bundle/vim-css-color"]
 	path = bundle/vim-css-color
 	url = https://github.com/ap/vim-css-color.git

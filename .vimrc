@@ -239,14 +239,14 @@ au Syntax *.clj RainbowParenthesesLoadSquare
 au Syntax *.clj RainbowParenthesesLoadBraces
 
 " YouCompleteMe
-nnoremap <Leader>] :YouCompleteMe GoTo<CR>
-let g:ycm_rust_src_path = '/Users/ols/Projects/rust/src'
-let g:ycm_semantic_triggers = {
-     \ 'elm' : ['.'],
-     \ 'rust' : ['.', '::']
-     \}
-
-let g:ycm_python_binary_path = 'python'
+"nnoremap <Leader>] :YouCompleteMe GoTo<CR>
+"let g:ycm_rust_src_path = '/Users/ols/Projects/rust/src'
+"let g:ycm_semantic_triggers = {
+"     \ 'elm' : ['.'],
+"     \ 'rust' : ['.', '::']
+"     \}
+"
+"let g:ycm_python_binary_path = 'python'
 
 "Powerline
 let g:Powerline_symbols = 'fancy'
