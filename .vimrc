@@ -251,4 +251,8 @@ let g:ycm_python_binary_path = 'python'
 "Powerline
 let g:Powerline_symbols = 'fancy'
 
+"indentLine
+"let g:vim_json_syntax_conceal = 0
+autocmd Filetype json let g:indentLine_setConceal = 0
+
 " END
