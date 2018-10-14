@@ -255,4 +255,7 @@ let g:Powerline_symbols = 'fancy'
 "let g:vim_json_syntax_conceal = 0
 autocmd Filetype json let g:indentLine_setConceal = 0
 
+" ocaml
+set rtp^="/Users/ols/.opam/4.02.3+buckle-master/share/ocp-indent/vim"
+
 " END
